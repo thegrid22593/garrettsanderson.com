@@ -10,6 +10,7 @@ class ProjectItem extends Component {
          <div className="project">
             <img src={this.props.project.featuredImage} />
             <h4>{this.props.project.name}</h4>
+            <h6>{this.props.project.built_with}</h6>
          </div>
       );
    }
