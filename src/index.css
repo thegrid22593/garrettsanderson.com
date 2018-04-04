@@ -4,13 +4,12 @@ body {
    font-family: sans-serif;
 }
 
+a {
+   text-decoration: none;
+}
+
 img {
    max-width: 100%;
    width: 100%;
    height: auto;
-}
-
-.project-container {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
 }

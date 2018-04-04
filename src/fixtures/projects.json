@@ -1,7 +1,7 @@
 [
    {
       "id": 1,
-      "name": "Rodrigos Mexican Gril",
+      "name": "Rodrigos Mexican Grill",
       "slug": "rodrigos-mexican-grill",
       "type_of_development": "Full-Stack Javascript",
       "built_with": "Angular 4+, Node.js, Express, MYSQL, Omnivore.io",
@@ -76,7 +76,8 @@
          "instagram": false,
          "youTube": false
       },
-      "liveURL": "http://mrkb-inventory.ruhm.com/",
+      "liveURL":
+         "http://mrkb-inventory.com.s3-website-us-west-1.amazonaws.com/",
       "images": [
          "./images/project-images/mrkb-1.jpg",
          "./images/project-images/mrkb-2.jpg"

@@ -6,11 +6,17 @@ class ProjectItem extends Component {
    }
 
    render() {
+      const project = this.props.project;
       return (
          <div className="project">
-            <img src={this.props.project.featuredImage} />
-            <h4>{this.props.project.name}</h4>
-            <h6>{this.props.project.built_with}</h6>
+            <a href={project.liveURL} target="_blank">
+               <img
+                  src={project.featuredImage}
+                  alt={project.introDescription}
+               />
+               <h4>{project.name}</h4>
+               <h6>{project.built_with}</h6>
+            </a>
          </div>
       );
    }
