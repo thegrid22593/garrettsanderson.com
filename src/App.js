@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Header from './Header';
+import HeaderLinks from './HeaderLinks';
 import Projects from './Projects/index';
 import Footer from './Footer';
 
@@ -10,6 +11,7 @@ class App extends Component {
       return (
          <div className="app">
             <Header />
+            <HeaderLinks />
             <Projects />
             <Footer />
          </div>

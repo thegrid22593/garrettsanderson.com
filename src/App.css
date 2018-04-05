@@ -46,6 +46,28 @@ a {
    font-weight: 100;
 }
 
+.header-links {
+   list-style: none;
+   text-align: center;
+}
+
+.header-links li {
+   display: inline-block;
+   padding: 0 0.5rem;
+}
+
+.header-links li i {
+   font-size: 1.25rem;
+   color: #ccc;
+   transition: 0.2s all ease-in-out;
+   cursor: pointer;
+}
+
+.header-links li:hover > a i {
+   color: #333;
+   cursor: pointer;
+}
+
 .projects-container {
    display: grid;
    grid-template-columns: 1fr 1fr;
