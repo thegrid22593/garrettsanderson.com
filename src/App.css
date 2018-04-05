@@ -1,11 +1,49 @@
 .app {
-   max-width: 1248px;
-   width: 90%;
-   margin: 0 auto;
+  max-width: 1248px;
+  width: 90%;
+  margin: 0 auto;
 }
+
+.header-info {
+  text-align: center;
+  background: #00aaff;
+  padding: 3rem 0;
+  margin-bottom: 4rem;
+}
+
+.header-info h1 {
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.header-info h5 {
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 100;
+}
+
 .projects-container {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-column-gap: 10px;
-   grid-row-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 40px;
+}
+
+.projects-container .project {
+}
+
+.projects-container .project h4 {
+  color: #333;
+  margin: 0;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects-container .project h6 {
+  color: #333;
+  margin: 0;
 }
