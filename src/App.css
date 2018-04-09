@@ -97,6 +97,14 @@ a {
    margin-bottom: 0.5rem;
 }
 
+.projects-container .project h5 {
+   margin: 0;
+   margin-bottom: 0.5rem;
+   font-size: 1.125rem;
+   color: #aaa;
+   font-weight: 400;
+}
+
 .projects-container .project h6 {
    color: #333;
    margin: 0;

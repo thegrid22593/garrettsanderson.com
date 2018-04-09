@@ -16,6 +16,7 @@ class ProjectItem extends Component {
                />
                <div className="content">
                   <h4>{project.name}</h4>
+                  <h5>{project.type_of_development}</h5>
                   <h6>Built With: {project.built_with}</h6>
                </div>
             </a>
