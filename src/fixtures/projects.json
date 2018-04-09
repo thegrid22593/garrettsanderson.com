@@ -127,6 +127,7 @@
       "name": "Wozencraft Insurance",
       "slug": "wozencraft-insurance",
       "built_with": "Custom WordPress Theme, Foundation 5, SendGrid",
+      "type_of_development": "Front-End Javascript",
       "projectDescription": "",
       "projectIntroDetails":
          "UI Design, CSS3, HTML5, WordPress, Responsive, PHP Forms",
