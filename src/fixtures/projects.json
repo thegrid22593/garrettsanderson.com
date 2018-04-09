@@ -89,6 +89,7 @@
       "id": 4,
       "name": "Parklane Ala Moana",
       "slug": "parklane-ala-moana",
+      "type_of_development": "Front-End Javascript",
       "built_with":
          "Custom WordPress Theme, SASS, jQuery, Bootstrap, Vimeo API",
       "projectDescription":
@@ -118,9 +119,33 @@
    },
    {
       "id": 5,
+      "name": "Wozencraft Insurance",
+      "slug": "wozencraft-insurance",
+      "built_with": "Custom WordPress Theme, Foundation 5, SendGrid",
+      "projectDescription": "",
+      "projectIntroDetails":
+         "UI Design, CSS3, HTML5, WordPress, Responsive, PHP Forms",
+      "featuredImage": "./images/project-images/wozencraft-1.jpg",
+      "apis": {
+         "twitter": true,
+         "facebook": true,
+         "vimeo": false,
+         "instagram": false,
+         "youTube": false
+      },
+      "live": true,
+      "backgroundColor": "#352c47",
+      "liveURL": "http://wozencraftinsurance.com/",
+      "images": ["./images/project-images/wozencraft-1.jpg"],
+      "logo": "./images/wozencraft-logo.png",
+      "vimeoVideoID": 213123
+   },
+   {
+      "id": 6,
       "name": "The All American Boys Chorus",
       "slug": "the-all-american-boys-chorus",
-      "built_with": "CMS, Foundation 5",
+      "type_of_development": "Front-End Javascript",
+      "built_with": "Custom Wordpress Theme, Foundation 5",
       "introDescription":
          "A Fresh New Web Design for America's Most Beloved Boys Choir",
       "projectDescription":
@@ -147,7 +172,7 @@
       "vimeoVideoID": 213123
    },
    {
-      "id": 6,
+      "id": 7,
       "name": "PAZU",
       "slug": "pazu",
       "projectDescription": "#4a4951",
@@ -164,29 +189,6 @@
          "./images/project-images/pazu-5.jpg"
       ],
       "logo": "./images/pazu-logo.png",
-      "vimeoVideoID": 213123
-   },
-   {
-      "id": 7,
-      "name": "Wozencraft Insurance",
-      "slug": "wozencraft-insurance",
-      "built_with": "Custom WordPress Theme, Foundation 5, SendGrid",
-      "projectDescription": "",
-      "projectIntroDetails":
-         "UI Design, CSS3, HTML5, WordPress, Responsive, PHP Forms",
-      "featuredImage": "./images/project-images/wozencraft-1.jpg",
-      "apis": {
-         "twitter": true,
-         "facebook": true,
-         "vimeo": false,
-         "instagram": false,
-         "youTube": false
-      },
-      "live": true,
-      "backgroundColor": "#352c47",
-      "liveURL": "http://wozencraftinsurance.com/",
-      "images": ["./images/project-images/wozencraft-1.jpg"],
-      "logo": "./images/wozencraft-logo.png",
       "vimeoVideoID": 213123
    }
 ]
