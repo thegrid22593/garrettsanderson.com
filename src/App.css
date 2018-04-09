@@ -28,7 +28,6 @@ a {
    text-align: center;
    background: #00aaff;
    padding: 3rem 0;
-   margin-bottom: 4rem;
 }
 
 .header-info h1 {
@@ -49,6 +48,8 @@ a {
 .header-links {
    list-style: none;
    text-align: center;
+   margin: 3rem 0;
+   padding: 0;
 }
 
 .header-links li {
@@ -58,7 +59,7 @@ a {
 
 .header-links li i {
    font-size: 1.25rem;
-   color: #ccc;
+   color: #777;
    transition: 0.2s all ease-in-out;
    cursor: pointer;
 }

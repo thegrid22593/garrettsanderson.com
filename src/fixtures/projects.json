@@ -87,6 +87,37 @@
    },
    {
       "id": 4,
+      "name": "Parklane Ala Moana",
+      "slug": "parklane-ala-moana",
+      "built_with":
+         "Custom WordPress Theme, SASS, jQuery, Bootstrap, Vimeo API",
+      "projectDescription":
+         "Parklane Ala Moana is a luxurious development on the main island of Hawaii. The biggest challenges on this project was working with the Vimeo API and creating a seamless user experience on the landing page of the website in order to draw users to the main conversion of inquiring for one of the estates. These front-end problems were solved by incorporating scroll assist functionality and Jquery Vide for the fullscreen HTML 5 videos.",
+      "projectIntroDetails": "WordPress, Responsive, HTML5, CSS3, SASS, JQUERY",
+      "featuredImage": "./images/project-images/pl-1.jpg",
+      "live": true,
+      "backgroundColor": "#f7f7f7",
+      "apis": {
+         "twitter": true,
+         "facebook": true,
+         "vimeo": false,
+         "instagram": false,
+         "youTube": false
+      },
+      "liveURL": "http://parklanealamoana.com/",
+      "images": [
+         "./images/project-images/pl-1.jpg",
+         "./images/project-images/pl-2.jpg",
+         "./images/project-images/pl-3.jpg",
+         "./images/project-images/pl-4.jpg",
+         "./images/project-images/pl-5.jpg",
+         "./images/project-images/pl-6.jpg"
+      ],
+      "logo": "./images/plalamoana-logo.png",
+      "vimeoVideoID": 213123
+   },
+   {
+      "id": 5,
       "name": "The All American Boys Chorus",
       "slug": "the-all-american-boys-chorus",
       "built_with": "CMS, Foundation 5",
@@ -115,37 +146,6 @@
       "logo": "./images/aabc-logo.png",
       "vimeoVideoID": 213123
    },
-
-   {
-      "id": 5,
-      "name": "Parklane Ala Moana",
-      "slug": "parklane-ala-moana",
-      "built_with": "CMS, jQuery, Bootstrap",
-      "projectDescription":
-         "Parklane Ala Moana is a luxurious development on the main island of Hawaii. The biggest challenges on this project was working with the Vimeo API and creating a seamless user experience on the landing page of the website in order to draw users to the main conversion of inquiring for one of the estates. These front-end problems were solved by incorporating scroll assist functionality and Jquery Vide for the fullscreen HTML 5 videos.",
-      "projectIntroDetails": "WordPress, Responsive, HTML5, CSS3, SASS, JQUERY",
-      "featuredImage": "./images/project-images/pl-1.jpg",
-      "live": true,
-      "backgroundColor": "#f7f7f7",
-      "apis": {
-         "twitter": true,
-         "facebook": true,
-         "vimeo": false,
-         "instagram": false,
-         "youTube": false
-      },
-      "liveURL": "http://parklanealamoana.com/",
-      "images": [
-         "./images/project-images/pl-1.jpg",
-         "./images/project-images/pl-2.jpg",
-         "./images/project-images/pl-3.jpg",
-         "./images/project-images/pl-4.jpg",
-         "./images/project-images/pl-5.jpg",
-         "./images/project-images/pl-6.jpg"
-      ],
-      "logo": "./images/plalamoana-logo.png",
-      "vimeoVideoID": 213123
-   },
    {
       "id": 6,
       "name": "PAZU",
@@ -170,7 +170,7 @@
       "id": 7,
       "name": "Wozencraft Insurance",
       "slug": "wozencraft-insurance",
-      "built_with": "CMS, Foundation, PHP Forms",
+      "built_with": "Custom WordPress Theme, Foundation 5, SendGrid",
       "projectDescription": "",
       "projectIntroDetails":
          "UI Design, CSS3, HTML5, WordPress, Responsive, PHP Forms",

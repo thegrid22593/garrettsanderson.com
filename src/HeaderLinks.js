@@ -15,6 +15,11 @@ class HeaderLinks extends Component {
                name: 'GitHub',
                url: 'https://github.com/thegrid22593',
             },
+            {
+               icon: 'fa fa-envelope',
+               name: 'Email',
+               url: 'mailto:garrett.sanderson@gmail.com',
+            },
          ],
       };
    }
