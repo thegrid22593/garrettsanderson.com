@@ -95,7 +95,7 @@
       "slug": "kyro-digital",
       "type_of_development":
          "Front-End Javascript, WordPress Custom Theme Development",
-      "built_with": "Vue.js, WordPress",
+      "built_with": "Vue.js, WordPress, SendGrid, CSS Grid",
       "projectDescription":
          "This was one of the first Angular projects I worked on. The MRKB Inventory Board is an interactive Site Plan. The board shows all buildings on the development along with its status of units available, pending and sold. This interactive presentation also features, modal galleries, floor plans and client-side filtering. This project was originally designed to be shown on a 1920x1280 resolution TV, however there was still a need for the project to be usable on an iPad or tablet if the sales office wanted to give walking tours with the interactive plan in hand.",
       "projectIntroDetails": "Angular 1, HTML5, CSS3, SASS",
