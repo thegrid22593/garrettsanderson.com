@@ -109,8 +109,7 @@
          "instagram": false,
          "youTube": false
       },
-      "liveURL":
-         "http://mrkb-inventory.com.s3-website-us-west-1.amazonaws.com/",
+      "liveURL": "https://www.kyrodigital.com",
       "images": [
          "./images/project-images/kyrodigital-1.jpg",
          "./images/project-images/kyrodigital-2.jpg"
