@@ -28,21 +28,7 @@ $goto = '';
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="shortcut icon" href="<?php echo the_field('favicon','option'); ?>"/>
 <link rel="apple-touch-icon" href="<?php echo the_field('favicon','option'); ?>">
-
-<?php
-$iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
-$android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
-$palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
-$berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
-$ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
-$ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
-if ($iphone || $android || $palmpre || $ipod || $berry || $ipad == true) { ?>
-<!-- <link href="<?php bloginfo('template_directory'); ?>/includes/css/mobile.css" rel="stylesheet" type="text/css" /> -->
-<?php } ?>
-
-<!--[if lte IE 8]>
-<link href="<?php //bloginfo('template_directory'); ?>/includes/css-ie.css" rel="stylesheet" type="text/css" media="all" />
-<![endif]-->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:400,500,700" rel="stylesheet">
 
 <!-- ANALYTICS -->
  <script>
@@ -63,12 +49,6 @@ if ($iphone || $android || $palmpre || $ipod || $berry || $ipad == true) { ?>
   </script>
 <?php } ?>
 
-<!-- INCLUDED SCRIPTS -->
-<?php
-  if (!empty($scriptsHeader)) {
-  	scriptPrint($scriptsHeader);
-  }
-?>
 
 </head>
 
@@ -78,5 +58,24 @@ if ($iphone || $android || $palmpre || $ipod || $berry || $ipad == true) { ?>
 
 <header>
 
+<section class="central-display">
+    <div class="headlines">
+        <h1>Garrett Sanderson</h1>
+        <h3>Web Developer &amp; Designer In Orange County, CA</h3>
+        <div class="divider"></div>
+        <h4></h4>
+        <nav class="central-display-nav">
+            <ul>
+                <li class="active"><a href="/"> <i class="icon icon-home">Home</i></a></li>
+                <li><a href="/projects"> <i class="icon icon-work">Projects</i></a></li>
+                <li><a href="/services"> <i class="icon icon-services">Services</i></a></li>
+                <li><a href="/about"> <i class="icon icon-about">About</i></a></li>
+                <li><a href="/resume"> <i class="icon icon-resume">Resume</i></a></li>
+                <li><a href="/contact"> <i class="icon icon-contact">Contact</i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="overlay"></div>
+</section>
 
 </header>

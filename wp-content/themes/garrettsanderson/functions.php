@@ -7,9 +7,8 @@
 /*********** LOAD STYLES AND SCRIPTS ***********/
 
 function load_styles_scripts() {
-
-  // P11 Screen Styles
-  wp_enqueue_style( 'screen', get_template_directory_uri() . '/includes/css/screen.css', array(), false );
+  
+  wp_enqueue_style( 'screen', get_template_directory_uri() . '/includes/css/styles.css', array(), false );
 
   /******************
   * SCRIPTS / JS
@@ -25,12 +24,6 @@ function load_styles_scripts() {
   // Load jQuery
   wp_enqueue_script( 'jQuery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js', array(), '2.2.2', false );
 
-  // Load SlickNav
-  wp_enqueue_script( 'slicknav', get_template_directory_uri() . '/includes/js/contrib/slicknav.js', array('jQuery'), '1.0.1', true );
-
-  // Load Cycle JS
-  wp_enqueue_script( 'cycle', get_template_directory_uri() . '/includes/js/contrib/cycle2.js', array('jQuery'), '2.1.3', true );
-
   // Load Global JS
   wp_enqueue_script( 'js', get_template_directory_uri() . '/includes/js/global.js', array('jQuery', 'cycle', 'slicknav'), false, true );
 
@@ -39,7 +32,7 @@ function load_styles_scripts() {
 add_action( 'wp_enqueue_scripts', 'load_styles_scripts');
 
 // Async load JS
-function p11creative_async_scripts($url)
+function async_scripts($url)
 {
     if ( strpos( $url, '#asyncload') === false )
         return $url;
@@ -48,7 +41,7 @@ function p11creative_async_scripts($url)
     else
 	return str_replace( '#asyncload', '', $url )."' async='async";
     }
-add_filter( 'clean_url', 'p11creative_async_scripts', 11, 1 );
+add_filter( 'clean_url', 'async_scripts', 11, 1 );
 
 
 // ACF Responsive SRC SET

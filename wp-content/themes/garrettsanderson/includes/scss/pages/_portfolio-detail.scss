@@ -1,0 +1,118 @@
+section.project-detail-container {
+    @include make-container();
+  
+    .project-detail {
+      @include make-row();
+      p {
+        color: darken($brand-light-grey, 10%);
+        font-weight: 200;
+        line-height: 1.8rem;
+      }
+  
+      .project-detail-header {
+        text-align: center;
+        @include make-col-ready();
+        @include make-col(8);
+        margin: 0 auto;
+        padding: 10rem 0 5rem 0;
+        h1 {
+          font-size: 1.75rem;
+          color: $brand-dark-grey;
+          font-weight: 500;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          font-weight: 800;
+        }
+        p.built-with {
+          margin-bottom: 2rem;
+          color: $brand-light-grey;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-size: 1.125rem;
+        }
+  
+        hr {
+          border-top: 1px solid #eee;
+          margin-top: 4rem;
+        }
+  
+        button.live-site-btn {
+          border: 1px solid $brand-light-grey;
+          @include transition(0.2s all ease-in-out);
+          font-weight: 300;
+          font-size: 0.7rem;
+          letter-spacing: 0.1rem;
+          padding: 0.3rem 0.8rem;
+          text-transform: uppercase;
+          color: $brand-pink;
+          border: 1px solid $brand-pink;
+          background: none;
+          border-radius: 18rem;
+          &:hover {
+            color: white;
+            cursor: pointer;
+            background: $brand-pink;
+          }
+        }
+  
+        p {
+          color: darken($brand-light-grey, 10%);
+          font-weight: 200;
+          line-height: 1.8rem;
+        }
+      }
+  
+      .project-detail-content {
+        padding-top: 5rem;
+        background: $brand-white;
+        overflow: hidden;
+        @include make-row();
+        padding: 5rem;
+  
+        aside.project-detail-sidebar {
+          @include make-col-ready();
+          @include make-col(3);
+  
+          .project-navigation {
+            position: fixed;
+            z-index: 900;
+  
+            h5 {
+              font-size: 1rem;
+              color: $brand-dark-grey;
+              margin-bottom: 0.5rem;
+              border-bottom: 1px solid $brand-light-grey;
+            }
+  
+            ul {
+              list-style: none;
+              li {
+                color: $brand-grey;
+                padding: 0.5rem 0;
+              }
+            }
+          }
+        }
+  
+        .project-content {
+          @include make-col-ready();
+          @include make-col(9);
+          h2 {
+            color: $brand-dark-grey;
+            margin-bottom: 1rem;
+            font-weight: 500;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+          }
+  
+          .project-image {
+            img {
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
