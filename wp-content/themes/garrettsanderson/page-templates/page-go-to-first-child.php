@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Redirect To First Child
- * @package client-theme
+ * @package garrettsanderson
  */
 
 $pagekids = get_pages("child_of=".$post->ID."&sort_column=menu_order");

@@ -1,13 +1,8 @@
 <?php
 /**
  * Template Name: Home
- * @package client-theme
+ * @package garrettsanderson
  */
-
-/* INCLUDE PAGE SCRIPTS */
-
-$scriptsHeader = '';
-$scriptsFooter = '';
 
 get_header(); ?>
 
