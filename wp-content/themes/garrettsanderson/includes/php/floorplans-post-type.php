@@ -1,57 +1,57 @@
 <?php
 
-// ************ CREATE FLOOR PLANS POST TYPE **************** //
+// ************ CREATE PROJECTS POST TYPE **************** //
 
-add_action('init', 'create_floor_plans_post_type');
+add_action('init', 'create_projects_post_type');
 
-function create_floor_plans_post_type() {
+function create_projects_post_type() {
 
   $labels = array(
-    'name' => __('Floor Plans'),
-    'singular_name' => __('Floor Plan'),
-    'all_items' => __('All Floor Plans'),
-    'add_new' => _x('Add new Floor Plan', 'Floor Plan'),
-    'add_new_item' => __('Add new Floor Plan'),
-    'edit_item' => __('Edit Floor Plan'),
-    'new_item' => __('New Floor Plan'),
-    'view_item' => __('View Floor Plan'),
-    'search_items' => __('Search in Floor Plan'),
-    'not_found' =>  __('No Floor Plans found'),
-    'not_found_in_trash' => __('No Floor Plans found in trash'),
+    'name' => __('Projects'),
+    'singular_name' => __('Project'),
+    'all_items' => __('All Projects'),
+    'add_new' => _x('Add new Project', 'Project'),
+    'add_new_item' => __('Add new Project'),
+    'edit_item' => __('Edit Project'),
+    'new_item' => __('New Project'),
+    'view_item' => __('View Project'),
+    'search_items' => __('Search in Project'),
+    'not_found' =>  __('No Projects found'),
+    'not_found_in_trash' => __('No Projects found in trash'),
     'parent_item_colon' => ''
   );
   $args = array (
     'labels' => $labels,
     'public' => true,
     'has_archive' => true,
-    'menu_icon' => 'dashicons-category',
-    'rewrite' => array('slug' => '/floor-plans'),
-    'taxonomies' => array( /*'category',*/ 'floor-plan'),
+    'menu_icon' => 'dashicons-images-alt',
+    'rewrite' => array('slug' => '/projects'),
+    'taxonomies' => array( /*'category',*/ 'project'),
     'query_var' => true,
     'menu_position' => 22,
     'supports'=> array('thumbnail' , /*'custom-fields',*/ 'title', 'editor', 'excerpt'),
     'show_in_rest'       => true,
-    'rest_base'          => 'floorplans',
+    'rest_base'          => 'projects',
     'rest_controller_class' => 'WP_REST_Posts_Controller',
   );
-  register_post_type('floor-plans', $args);
+  register_post_type('projects', $args);
 }
 
-// ************ GIVE FLOOR PLANS ITS OWN CATEGORIES **************** //
+// ************ GIVE PROJECTS ITS OWN CATEGORIES **************** //
 
-function my_taxonomies_floor_plan() {
+function my_taxonomies_project() {
   $labels = array(
-    'name'              => _x( 'Floor Plan Categories', 'taxonomy general name' ),
-    'singular_name'     => _x( 'Floor Plan Category', 'taxonomy singular name' ),
-    'search_items'      => __( 'Search Floor Plan Categories' ),
-    'all_items'         => __( 'All Floor Plan Categories' ),
-    'parent_item'       => __( 'Parent Floor Plan Category' ),
-    'parent_item_colon' => __( 'Parent Floor Plan Category:' ),
-    'edit_item'         => __( 'Edit Floor Plan Category' ),
-    'update_item'       => __( 'Update Floor Plan Category' ),
-    'add_new_item'      => __( 'Add New Floor Plan Category' ),
-    'new_item_name'     => __( 'New Floor Plan Category' ),
-    'menu_name'         => __( 'Floor Plan Categories' ),
+    'name'              => _x( 'Project Categories', 'taxonomy general name' ),
+    'singular_name'     => _x( 'Project Category', 'taxonomy singular name' ),
+    'search_items'      => __( 'Search Project Categories' ),
+    'all_items'         => __( 'All Project Categories' ),
+    'parent_item'       => __( 'Parent Project Category' ),
+    'parent_item_colon' => __( 'Parent Project Category:' ),
+    'edit_item'         => __( 'Edit Project Category' ),
+    'update_item'       => __( 'Update Project Category' ),
+    'add_new_item'      => __( 'Add New Project Category' ),
+    'new_item_name'     => __( 'New Project Category' ),
+    'menu_name'         => __( 'Project Categories' ),
     'show_admin_column' => true
   );
   $args = array(
@@ -62,8 +62,8 @@ function my_taxonomies_floor_plan() {
     'rest_base'             => 'genre',
     'rest_controller_class' => 'WP_REST_Terms_Controller'
   );
-  register_taxonomy( 'floor-plan_category', 'floor-plans', $args );
+  register_taxonomy( 'project_category', 'projects', $args );
 }
-add_action( 'init', 'my_taxonomies_floor_plan', 0 );
+add_action( 'init', 'my_taxonomies_project', 0 );
 
 ?>
