@@ -5,6 +5,20 @@
  */
 
 get_header(); ?>
+<?php 
+
+$args = array( 'post_type' => 'product', 'posts_per_page' => 10 );
+$loop = new WP_Query( $args );
+while ( $loop->have_posts() ) : $loop->the_post();
+endwhile;
+
+?>
+
+<?php $args = array( 'post_type' => '', 'posts_per_page' => 10 ); ?>
+<?php $loop = new WP_Query( $args ); ?>
+    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+    
+    <?php endwhile; ?>
 
 <section class="skills-and-passions">
     <div class="wrapper">
