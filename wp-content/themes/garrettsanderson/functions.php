@@ -220,8 +220,8 @@ if ( function_exists( 'add_theme_support' ) ) {
   }
 
   // Include Post Types
-  require_once WP_CONTENT_DIR . '/themes/garrettsanderson/includes/php/floorplans-post-type.php';
-  // require_once WP_CONTENT_DIR . '/themes/client-theme/includes/php/poi-post-type.php';
+  require_once WP_CONTENT_DIR . '/themes/garrettsanderson/includes/php/projects-post-type.php';
+  require_once WP_CONTENT_DIR . '/themes/garrettsanderson/includes/php/testimonials-post-type.php';
   // require_once WP_CONTENT_DIR . '/themes/client-theme/includes/php/residences-post-type.php';
 
   /*********** TRIM EXCERPT ***********/
