@@ -1,0 +1,18 @@
+body {
+  @include fontSmoothing;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+p {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}

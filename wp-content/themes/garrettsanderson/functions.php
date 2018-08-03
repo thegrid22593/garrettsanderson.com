@@ -10,6 +10,8 @@ function load_styles_scripts() {
   
   wp_enqueue_style( 'screen', get_template_directory_uri() . '/includes/css/styles.css', array(), false );
 
+  wp_enqueue_style('iconfont', get_template_directory_uri() . '/includes/fonts/ui/icons.css', array('screen'), false);
+
   /******************
   * SCRIPTS / JS
   ******************/

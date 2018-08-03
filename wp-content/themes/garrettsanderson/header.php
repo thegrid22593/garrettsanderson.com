@@ -57,25 +57,73 @@ $goto = '';
 <a id="uplink" class="twhite pad1 scrollto" href="#top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 
 <header>
-
-<section class="central-display">
-    <div class="headlines">
-        <h1>Garrett Sanderson</h1>
-        <h3>Web Developer &amp; Designer In Orange County, CA</h3>
-        <div class="divider"></div>
-        <h4></h4>
-        <nav class="central-display-nav">
-            <ul>
-                <li class="active"><a href="/"> <i class="icon icon-home">Home</i></a></li>
-                <li><a href="/projects"> <i class="icon icon-work">Projects</i></a></li>
-                <li><a href="/services"> <i class="icon icon-services">Services</i></a></li>
-                <li><a href="/about"> <i class="icon icon-about">About</i></a></li>
-                <li><a href="/resume"> <i class="icon icon-resume">Resume</i></a></li>
-                <li><a href="/contact"> <i class="icon icon-contact">Contact</i></a></li>
-            </ul>
+    <section class="top-nav-container">
+        <nav class="top-nav">
+            <div class="logo">
+                <a class="main-logo" href="<?php echo site_url();?>">
+                    <i class="icon icon-logo"></i>
+                </a>
+            </div>
+            <div class="navigation-icons">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a class="main-nav-icon" href="<?php echo site_url(); ?>">
+                            <i class="icon icon-home"></i>
+                            <br />
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="main-nav-icon" href="<?php echo site_url();?>/work">
+                            <i class="icon icon-work"></i>
+                            <br />
+                            <span>Work</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="main-nav-icon" href="<?php echo site_url();?>/about">
+                            <i class="icon icon-about"></i>
+                            <br />
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="main-nav-icon" href="<?php echo site_url();?>/blog">
+                            <i class="icon icon-blog"></i>
+                            <br />
+                            <span>Blog</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="main-nav-icon" href="<?php echo site_url();?>/contact">
+                        <i class="icon icon-contact"></i>
+                        <br/>
+                        <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    </div>
-    <div class="overlay"></div>
-</section>
+    </section>
+    
 
+    <section class="central-display">
+        <div class="headlines">
+            <h1>Garrett Sanderson</h1>
+            <h3>Web Developer &amp; Designer In Orange County, CA</h3>
+            <div class="divider"></div>
+            <h4></h4>
+            <nav class="central-display-nav">
+                <ul>
+                    <li class="active"><a href="/"> <i class="icon icon-home">Home</i></a></li>
+                    <li><a href="/projects"> <i class="icon icon-work">Projects</i></a></li>
+                    <li><a href="/services"> <i class="icon icon-services">Services</i></a></li>
+                    <li><a href="/about"> <i class="icon icon-about">About</i></a></li>
+                    <li><a href="/resume"> <i class="icon icon-resume">Resume</i></a></li>
+                    <li><a href="/contact"> <i class="icon icon-contact">Contact</i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="overlay"></div>
+    </section>
 </header>

@@ -1,0 +1,126 @@
+@font-face {
+	font-family: "garrettsanderson-ui";
+	src: url('./garrettsanderson-ui.eot');
+	src: url('./garrettsanderson-ui.eot?#iefix') format('eot'),
+		url('./garrettsanderson-ui.woff2') format('woff2'),
+		url('./garrettsanderson-ui.woff') format('woff'),
+		url('./garrettsanderson-ui.ttf') format('truetype'),
+		url('./garrettsanderson-ui.svg#garrettsanderson-ui') format('svg');
+}
+
+.icon:before {
+	font-family: "garrettsanderson-ui";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-about:before {
+	content: "\E001";
+}
+
+.icon-arrow-left:before {
+	content: "\E002";
+}
+
+.icon-arrow-right:before {
+	content: "\E003";
+}
+
+.icon-contact:before {
+	content: "\E004";
+}
+
+.icon-css-3:before {
+	content: "\E005";
+}
+
+.icon-description:before {
+	content: "\E006";
+}
+
+.icon-development:before {
+	content: "\E007";
+}
+
+.icon-dribbble:before {
+	content: "\E008";
+}
+
+.icon-github-icon:before {
+	content: "\E009";
+}
+
+.icon-hire:before {
+	content: "\E00A";
+}
+
+.icon-home:before {
+	content: "\E00B";
+}
+
+.icon-html-5:before {
+	content: "\E00C";
+}
+
+.icon-instgram:before {
+	content: "\E00D";
+}
+
+.icon-linkedin:before {
+	content: "\E00E";
+}
+
+.icon-logo:before {
+	content: "\E00F";
+}
+
+.icon-menu-bars:before {
+	content: "\E010";
+}
+
+.icon-service:before {
+	content: "\E011";
+}
+
+.icon-service_1:before {
+	content: "\E012";
+}
+
+.icon-technology:before {
+	content: "\E013";
+}
+
+.icon-ui-design:before {
+	content: "\E014";
+}
+
+.icon-user-interface:before {
+	content: "\E015";
+}
+
+.icon-ux-design-flow:before {
+	content: "\E016";
+}
+
+.icon-ux-design:before {
+	content: "\E017";
+}
+
+.icon-wordpress:before {
+	content: "\E018";
+}
+
+.icon-work-icon:before {
+	content: "\E019";
+}
+
+.icon-work:before {
+	content: "\E01A";
+}
