@@ -74,7 +74,7 @@ $goto = '';
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="main-nav-icon" href="<?php echo site_url();?>/work">
+                        <a class="main-nav-icon" href="<?php echo site_url();?>/portfolio">
                             <i class="icon icon-work"></i>
                             <br />
                             <span>Work</span>

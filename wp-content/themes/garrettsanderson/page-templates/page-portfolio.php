@@ -11,6 +11,11 @@ get_header(); ?>
         <h1>Projects</h1>
         <div class="projects-filter"></div>
         <div class="project-list">
+        <?php if (have_posts()) : ?>
+            <?php while (have_posts()) : the_post(); ?>
+                <?php the_title(); ?>
+            <?php endwhile; ?>
+        <?php endif; ?>
             <ul>
                 <li class="project-item" style="background: url('');">
                     <div class="project-details">
