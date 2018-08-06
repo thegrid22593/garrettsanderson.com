@@ -1,160 +1,139 @@
-.projects-content {
-    padding-top: 8rem 0;
-    @include make-container();
-  }
-  
+.projects-container {
+  padding-top: 8rem 0;
+  @include make-container();
+  width: 100%;
+  padding: 0;
+
   .projects {
-    @include make-row();
-    .project-item {
-      background-position: center !important;
-      background-size: cover !important;
-      float: none;
-      @include make-col(12);
-      height: 100vh;
-      position: relative;
-      z-index: 20;
-      @include transition(1s all ease-in-out);
-      @include mq-lg {
-        float: left;
-        width: 50%;
-        height: 50vh;
-        @include make-col(6);
-      }
-  
-      @include mq-xlg {
-        @include make-col(4);
-      }
-  
-      .overlay {
-        background: rgba(0, 0, 0, 0.2);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        @include transition(0.2s all ease-in-out);
-      }
-  
-      &:hover > .overlay {
-        background: rgba(0, 0, 0, 0.7);
-      }
-  
-      &:hover > .project-details {
-        opacity: 1;
-        top: 10%;
-      }
-  
-      &.fixed {
-        position: fixed;
-        top: 0;
-        z-index: 20;
-      }
-  
-      .project-details {
-        position: absolute;
-        top: 15%;
-        z-index: 10;
-        left: 10%;
-        opacity: 0;
-        @include transition(0.2s all ease-in-out);
-        .project-title {
-          h2 {
-            color: $brand-white;
-            font-size: 1.25rem;
-            font-weight: 800;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-family: $font-main;
-            line-height: 2rem;
-  
-            @include mq-lg {
-              font-size: 2rem;
-            }
-  
-            @include mq-xlg {
-              font-size: 2rem;
-            }
-          }
-        }
-        .project-description {
-          color: $brand-white;
-          font-size: 1rem;
-          font-family: $font-secondary;
-          font-weight: 300;
-          letter-spacing: 1px;
-        }
-        button {
-          background: $brand-pink;
-          @include box-shadow(0px 5px 20px rgba($brand-pink, 0.3));
-          border: none;
-          font-size: 0.7rem;
-          font-weight: lighter;
-          border-radius: 40px;
-          letter-spacing: 3px;
-          text-transform: uppercase;
-          color: $brand-white;
-          font-family: $font-main;
-          padding: 0.5rem 1rem;
-          margin-top: 2rem;
-          position: relative;
-          left: 0;
-          @include transition(0.3s all ease-in-out);
-  
-          @include mq-xlg {
-            padding: 0.5rem 1rem;
-            font-size: 0.6rem;
-          }
-  
-          &:hover {
-            background: $brand-blue;
-            @include box-shadow(0px 5px 20px rgba($brand-blue, 0.3));
-            color: $brand-white;
-            cursor: pointer;
-            left: 10px;
-          }
-        }
-      }
-      img.project-logo {
-        max-width: 200px;
-        @include transition(0.18s transform ease-in-out);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%) scale(1);
-        -ms-transform: translate(-50%, -50%) scale(1);
-        transform: translate(-50%, -50%) scale(1);
-      }
-      // .project-details {
-      //     position: absolute;
-      //     bottom: -37px;
-      //     background: rgba(0,0,0, 0.8);
-      //     width: 100%;
-      //     padding: 0.4rem 1rem;
-      //     color: white;
-      //     @include transition(0.2s all ease-in-out);
-      // }
+    h1 {
+      color: $brand-blue;
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      margin-bottom: 0;
     }
-    // &:hover > .project img {
-    //     -webkit-transform: translate(-50%, -50%) scale(0.8);
-    //     -ms-transform: translate(-50%, -50%) scale(0.8);
-    //     transform: translate(-50%, -50%) scale(0.8);
-    //     transform-origin: center;
-    //     cursor: pointer;
-    // }
-    // &:hover > .project .project-details {
-    //     bottom: 0;
-    // }
+    ul.project-list {
+      list-style: none;
+      padding: 0;
+      .project-item {
+        background-position: center !important;
+        background-size: cover !important;
+        float: none;
+        @include make-col(12);
+        height: 100vh;
+        position: relative;
+        z-index: 20;
+        @include transition(1s all ease-in-out);
+        @include mq-lg {
+          float: left;
+          width: 50%;
+          height: 50vh;
+          @include make-col(6);
+        }
+
+        @include mq-xlg {
+          @include make-col(4);
+        }
+
+        .overlay {
+          background: rgba(0, 0, 0, 0.2);
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          @include transition(0.2s all ease-in-out);
+        }
+
+        &:hover > .overlay {
+          background: rgba(0, 0, 0, 0.7);
+        }
+
+        &:hover > .project-details {
+          opacity: 1;
+        }
+
+        &.fixed {
+          position: fixed;
+          z-index: 20;
+        }
+
+        .project-details {
+          position: relative;
+          z-index: 100;
+          opacity: 0;
+          padding: 3rem;
+          @include transition(0.2s all ease-in-out);
+
+          .project-title {
+            h2 {
+              color: $brand-white;
+              font-size: 1.25rem;
+              font-weight: 800;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              font-family: $font-main;
+              line-height: 2rem;
+
+              @include mq-lg {
+                font-size: 2rem;
+              }
+
+              @include mq-xlg {
+                font-size: 2rem;
+              }
+            }
+          }
+          .project-description {
+            color: $brand-white;
+            font-size: 1rem;
+            font-family: $font-secondary;
+            font-weight: 300;
+            letter-spacing: 1px;
+          }
+          button {
+            background: $brand-pink;
+            @include box-shadow(0px 5px 20px rgba($brand-pink, 0.3));
+            border: none;
+            font-size: 0.7rem;
+            font-weight: lighter;
+            border-radius: 40px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: $brand-white;
+            font-family: $font-main;
+            padding: 0.5rem 1rem;
+            margin-top: 2rem;
+            position: relative;
+            left: 0;
+            @include transition(0.3s all ease-in-out);
+
+            @include mq-xlg {
+              padding: 0.5rem 1rem;
+              font-size: 0.6rem;
+            }
+
+            &:hover {
+              background: $brand-blue;
+              @include box-shadow(0px 5px 20px rgba($brand-blue, 0.3));
+              color: $brand-white;
+              cursor: pointer;
+              left: 10px;
+            }
+          }
+        }
+        img.project-logo {
+          max-width: 200px;
+          @include transition(0.18s transform ease-in-out);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%) scale(1);
+          -ms-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+    }
   }
-  
-  // section.projects {
-  //   @include make-container();
-  //   .projects-content {
-  //     @include make-row();
-  //     h1 {
-  //       @include make-col(6);
-  //       text-align: center;
-  //       margin: 0 auto;
-  //       color: $brand-blue;
-  //     }
-  //   }
-  // }
-  
+}

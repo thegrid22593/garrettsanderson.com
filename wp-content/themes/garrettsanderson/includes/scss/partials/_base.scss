@@ -1,19 +1,20 @@
 // Vendors
-@import '../vendors/bootstrap';
+@import "../vendors/bootstrap";
 
 // Base
-@import './variables';
-@import './mixins';
-@import './type';
+@import "./variables";
+@import "./mixins";
+@import "./type";
 
 // Components
-@import '../components/header';
-@import '../components/footer';
-@import '../components/top-nav';
-@import '../components/forms';
+@import "../components/header";
+@import "../components/footer";
+@import "../components/top-nav";
+@import "../components/forms";
 
 // Pages
-@import '../pages/home';
-@import '../pages/portfolio';
-@import '../pages/blog';
-@import '../pages/contact';
+@import "../pages/home";
+@import "../pages/portfolio";
+@import "../pages/portfolio-detail";
+@import "../pages/blog";
+@import "../pages/contact";

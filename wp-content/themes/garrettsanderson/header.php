@@ -77,7 +77,7 @@ $goto = '';
                         <a class="main-nav-icon" href="<?php echo site_url();?>/portfolio">
                             <i class="icon icon-work"></i>
                             <br />
-                            <span>Work</span>
+                            <span>Portfolio</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -106,24 +106,25 @@ $goto = '';
         </nav>
     </section>
     
-
-    <section class="central-display">
-        <div class="headlines">
-            <h1>Garrett Sanderson</h1>
-            <h3>Web Developer &amp; Designer In Orange County, CA</h3>
-            <div class="divider"></div>
-            <h4></h4>
-            <nav class="central-display-nav">
-                <ul>
-                    <li class="active"><a href="/"> <i class="icon icon-home">Home</i></a></li>
-                    <li><a href="/projects"> <i class="icon icon-work">Projects</i></a></li>
-                    <li><a href="/services"> <i class="icon icon-services">Services</i></a></li>
-                    <li><a href="/about"> <i class="icon icon-about">About</i></a></li>
-                    <li><a href="/resume"> <i class="icon icon-resume">Resume</i></a></li>
-                    <li><a href="/contact"> <i class="icon icon-contact">Contact</i></a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="overlay"></div>
-    </section>
+    <?php if(is_front_page()): ?>
+        <section class="central-display">
+            <div class="headlines">
+                <h1>Garrett Sanderson</h1>
+                <h3>Web Developer &amp; Designer In Orange County, CA</h3>
+                <div class="divider"></div>
+                <h4></h4>
+                <nav class="central-display-nav">
+                    <ul>
+                        <li class="active"><a href="/"> <i class="icon icon-home">Home</i></a></li>
+                        <li><a href="/projects"> <i class="icon icon-work">Projects</i></a></li>
+                        <li><a href="/services"> <i class="icon icon-services">Services</i></a></li>
+                        <li><a href="/about"> <i class="icon icon-about">About</i></a></li>
+                        <li><a href="/resume"> <i class="icon icon-resume">Resume</i></a></li>
+                        <li><a href="/contact"> <i class="icon icon-contact">Contact</i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay"></div>
+        </section>
+    <?php endif; ?>
 </header>
