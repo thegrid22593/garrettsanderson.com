@@ -1,0 +1,51 @@
+#news-content {
+  .news-posts {
+    .post {
+      @include make-col-ready();
+      @include make-col(4);
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+aside.blog-sidebar {
+  @include make-col-ready();
+  @include make-col(3);
+  background: $brand-blue;
+  padding: 2rem;
+  height: 100vh;
+  .news-posts {
+    .post {
+      @include make-row();
+      .date {
+        @include make-col-ready();
+        @include make-col(2);
+        font-weight: 800;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .background-featured-image {
+        width: 50px;
+        height: 50px;
+        background-position: center !important;
+        background-size: cover !important;
+        border-radius: 50%;
+        border: 3px solid $brand-white;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0.5rem;
+      }
+      h5 {
+        @include make-col-ready();
+        @include make-col(10);
+        font-size: 0.9rem;
+        font-weight: 500;
+        vertical-align: middle;
+        a {
+          color: $brand-white;
+        }
+      }
+    }
+  }
+}

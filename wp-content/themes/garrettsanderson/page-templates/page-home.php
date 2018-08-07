@@ -5,42 +5,52 @@
  */
 
 get_header(); ?>
-<?php 
-
-$args = array( 'post_type' => 'product', 'posts_per_page' => 10 );
-$loop = new WP_Query( $args );
-while ( $loop->have_posts() ) : $loop->the_post();
-endwhile;
-
-?>
-
-<?php $args = array( 'post_type' => '', 'posts_per_page' => 10 ); ?>
-<?php $loop = new WP_Query( $args ); ?>
-    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-    
-    <?php endwhile; ?>
 
 <section class="skills-and-passions">
-    <div class="wrapper">
-        <div class="full">
-            <h2>Skills and Passions</h2>
-        </div>
-        <div class="skill">
-            <div class="skill-content">
-                <h3>UI Design</h3>
-                <p>Understanding the balance between the interface and the experience is critical to designing the right solution. An elegant and aesthetic interface is a vital part of any design and must be given the proper care it deserves.</p>
+    <div class="skills-and-passions-container">
+        <h2>Skills and Passions</h2>
+        <div class="skills">
+            <div class="skill">
+                <div class="skill-content">
+                    <i class="icon icon-ui-design"></i>
+                    <h3>UI Design</h3>
+                    <p>Understanding the balance between the interface and the experience is critical to designing the right solution. An elegant and aesthetic interface is a vital part of any design and must be given the proper care it deserves.</p>
+                </div>
             </div>
-        </div>
-        <div class="skill">
-            <div class="skill-content">
-                <h3>UX Design</h3>
-                <p>Sketching complex system problems is both rewarding and exciting. Solving problems with a user-centered approach is one of Paragon's strong points and is something we are extremely passionate about.</p>
+            <div class="skill">
+                <div class="skill-content">
+                    <i class="icon icon-ux-design"></i>
+                    <h3>UX Design</h3>
+                    <p>Sketching complex system problems is both rewarding and exciting. Solving problems with a user-centered approach is one of Paragon's strong points and is something we are extremely passionate about.</p>
+                </div>
             </div>
-        </div>
-        <div class="skill">
-            <div class="skill-content">
-                <h3>Development</h3>
-                <p>With extensive knowledge of HTML5 and CSS3, as well as solid foundations in Jquery, PHP with WordPress, and SASS, Paragon is perfectly capable of building beautiful websites using the latest technologies and the best coding practices.</p>
+            <div class="skill">
+                <div class="skill-content">
+                    <i class="icon icon-development"></i>
+                    <h3>Web Development</h3>
+                    <p>With extensive knowledge of HTML5 and CSS3, as well as solid foundations in Jquery, PHP with WordPress, and SASS, Paragon is perfectly capable of building beautiful websites using the latest technologies and the best coding practices.</p>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-content">
+                    <i class="icon icon-ux-design-flow"></i>
+                    <h3>Data & Analytics</h3>
+                    <p>Sites not only need to be userfriendly and beautiful but also convert! A great looking website does nothing if it doesn't bring home the bacon at the end of the day.</p>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-content">
+                    <i class="icon icon-ux-design-flow"></i>
+                    <h3>SEO & Search Ranking</h3>
+                    <p>Websites need to be idexible and searchable, period. Without an SEO strategy and plan in place, good luck getting traffic to your site.</p>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-content">
+                    <i class="icon icon-development"></i>
+                    <h3>Talking About The Web</h3>
+                    <p>I absolutely love everything about the web and its capabilities. With that, I like to keep all my findings and nuggets on my blog.</p>
+                </div>
             </div>
         </div>
     </div>

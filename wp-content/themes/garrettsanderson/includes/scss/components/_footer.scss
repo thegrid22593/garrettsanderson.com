@@ -1,0 +1,35 @@
+footer {
+  padding: 1rem 0;
+  background: $brand-white;
+  @include make-container();
+
+  .footer-container {
+    @include make-row();
+
+    .copyright {
+      @include make-col-ready();
+      @include make-col(10);
+      text-align: center;
+      margin: 0 auto;
+      .footer-logo {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+        i {
+          color: $brand-blue;
+          font-size: 1.75rem;
+        }
+      }
+      .copy {
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 0.6rem;
+        color: $brand-dark-grey;
+        font-weight: lighter;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: $font-secondary;
+      }
+    }
+  }
+}
