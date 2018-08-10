@@ -107,7 +107,7 @@ $goto = '';
                 <h1>Garrett Sanderson</h1>
                 <h3>Web Developer &amp; Designer In Orange County, CA</h3>
                 <div class="divider"></div>
-                <a href=""><button class="btn-main white outline">View Portfolio</button></a>
+                <a href=""><button class="btn-main white outline"><i class="icon icon-work"></i>View Portfolio</button></a>
                 <a href=""><button class="btn-main white outline">My Thoughts</button></a>
                 <!-- <nav class="central-display-nav">
                     <ul>
