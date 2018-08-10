@@ -56,13 +56,13 @@ get_header(); ?>
     </div>
 </section>
 
-<section class="testimonials-container">
+<!-- <section class="testimonials-container">
     <h3>Why People Believe In Me</h3>
     <h4>Testimonials</h4>
     <div class="testimonials"><button class="btn prev"><i class="icon icon-arrow-left"></i><div class="testimonial"><div class="avatar-details"><div class="avatar-details-container"><img class="avatar" src="test.jpg" alt=""/><h3 class="avatar-name">Name</h3><h5 class="avatar-title">Title</h5><span>Test</span><div class="testimonial-content-container"><p> </p></div></div></div></div><p>there are no testimonaials</p></button>
         <button
             class="btn next"><i class="icon icon-arrow-right"></i></button>
     </div>
-</section>
+</section> -->
 
 <?php get_footer(); ?>
