@@ -4,7 +4,7 @@
  * @package garrettsanderson
  */
 
-get_header(); ?>
+get_header();?>
 
 <section class="project-detail-container">
     <div class="project-detail">
@@ -14,26 +14,29 @@ get_header(); ?>
         <hr/>
         <div class="project-detail-content">
             <div class="project-content">
+                <h6>Project Video</h6>
+                <div class="project-video-player" data-vimeo-id="<?php the_field('vimeo_video_id');?>"></div>
                 <h6>Project Description</h6>
-                <p><?php the_field('project_description'); ?></p>
+                <p><?php the_field('project_description');?></p>
+
                 <div class="project-image"><img src="<?php the_field('featured_image');?>" alt="" /></div>
 
                 <div class="project-gallery">
                     <h6>Project Gallery</h6>
                     <?php $images = get_field('image_gallery');?>
-                    <?php if( $images ): ?>
+                    <?php if ($images): ?>
                         <ul>
-                            <?php foreach( $images as $image ): ?>
+                            <?php foreach ($images as $image): ?>
                                 <li>
-                                    <img src="<?php echo $image['url'];?>" alt="">
+                                    <img src="<?php echo $image['url']; ?>" alt="">
                                 </li>
-                            <?php endforeach; ?>
+                            <?php endforeach;?>
                         </ul>
-                    <?php endif; ?>
+                    <?php endif;?>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<?php get_footer(); ?>
+<?php get_footer();?>

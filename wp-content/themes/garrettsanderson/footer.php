@@ -11,7 +11,7 @@ global $scriptsFooter;
     <div class="footer-container">
         <div class="copyright">
             <div class="footer-logo"><i class="icon icon-logo"></i></div>
-            <div class="copy">&copy; Copyright <?php echo date('Y');?> All Rights Reserved.</div>
+            <div class="copy">&copy; Copyright <?php echo date('Y'); ?> All Rights Reserved.</div>
         </div>
     </div>
 </footer>
@@ -21,7 +21,7 @@ global $scriptsFooter;
   .js .reveal { visibility: hidden; }
 </style>
 
-<?php wp_footer(); ?>
+<?php wp_footer();?>
 
 </body>
 </html>
