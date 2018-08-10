@@ -1,18 +1,6 @@
 .projects-container {
   width: 100%;
-  padding-top: 4rem;
-
   .projects {
-    h1 {
-      color: $brand-black;
-      padding: 2rem 0;
-      text-align: center;
-      font-weight: 500;
-      font-size: 1.5rem;
-      letter-spacing: 0.75rem;
-      text-transform: uppercase;
-      margin-bottom: 0;
-    }
     ul.project-list {
       list-style: none;
       padding: 0;
@@ -32,11 +20,9 @@
           height: 50vh;
           @include make-col(6);
         }
-
         @include mq-xlg {
           @include make-col(4);
         }
-
         .overlay {
           background: rgba(0, 0, 0, 0.2);
           width: 100%;
@@ -45,27 +31,22 @@
           top: 0;
           @include transition(0.2s all ease-in-out);
         }
-
-        &:hover > .overlay {
+        &:hover>.overlay {
           background: rgba(0, 0, 0, 0.7);
         }
-
-        &:hover > .project-details {
+        &:hover>.project-details {
           opacity: 1;
         }
-
         &.fixed {
           position: fixed;
           z-index: 20;
         }
-
         .project-details {
           position: relative;
           z-index: 100;
           opacity: 0;
           padding: 3rem;
           @include transition(0.2s all ease-in-out);
-
           .project-title {
             h2 {
               color: $brand-white;
@@ -75,11 +56,9 @@
               text-transform: uppercase;
               font-family: $font-main;
               line-height: 2rem;
-
               @include mq-lg {
                 font-size: 2rem;
               }
-
               @include mq-xlg {
                 font-size: 2rem;
               }
@@ -108,12 +87,10 @@
             position: relative;
             left: 0;
             @include transition(0.3s all ease-in-out);
-
             @include mq-xlg {
               padding: 0.5rem 1rem;
               font-size: 0.6rem;
             }
-
             &:hover {
               background: $brand-blue;
               @include box-shadow(0px 5px 20px rgba($brand-blue, 0.3));

@@ -1,8 +1,29 @@
 @import './partials/base';
-
 // Global
-
 html,
 body {
   overflow-x: hidden;
+}
+
+button {
+  border: none;
+}
+
+.intro {
+  @include make-col-ready();
+  @include make-col(7);
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  margin: 0 auto;
+  h1 {
+    color: $brand-black;
+    padding: 2rem 0;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 0.85rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
 }
