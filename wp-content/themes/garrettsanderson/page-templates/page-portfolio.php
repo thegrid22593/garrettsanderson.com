@@ -12,22 +12,22 @@ get_header();?>
     <div class="intro">
         <h1><?php the_title();?></h1>
         <p><?php the_field('intro');?></p>
-        <a href="/contact"><button class="btn-main">Let's Talk!</button></a>
+        <a href="/contact"><button class="btn-main pink outline">Let's Talk!</button></a>
     </div>
     <div class="projects">
         <ul class="project-list clearfix">
             <?php $loop = new WP_Query(array('post_type' => 'projects', 'posts_per_page' => 10));?>
             <?php while ($loop->have_posts()): $loop->the_post();?>
-																	                    <li class="project-item" style="background: url('<?php the_field('featured_image');?>');">
-																	                        <div class="project-details">
-																	                            <div class="project-title">
-																	                                <h2><?php the_field('project_title');?></h2>
-																	                            </div>
-																	                            <div class="project-description"><?php the_field('tech_stack');?></div>
-																	                            <a href="<?php the_permalink();?>"><button>View Project</button></a></div>
-																	                        <div class="overlay"></div>
-																	                    </li>
-																	            <?endwhile;?>
+                <li class="project-item" style="background: url('<?php the_field('featured_image');?>');">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <h2><?php the_field('project_title');?></h2>
+                        </div>
+                        <div class="project-description"><?php the_field('tech_stack');?></div>
+                        <a href="<?php the_permalink();?>"><button>View Project</button></a></div>
+                    <div class="overlay"></div>
+                </li>
+            <?endwhile;?>
         </ul>
     </div>
 </section>

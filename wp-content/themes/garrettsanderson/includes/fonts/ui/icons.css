@@ -33,94 +33,98 @@
 	content: "\E003";
 }
 
-.icon-contact:before {
+.icon-blog:before {
 	content: "\E004";
 }
 
-.icon-css-3:before {
+.icon-contact:before {
 	content: "\E005";
 }
 
-.icon-description:before {
+.icon-css-3:before {
 	content: "\E006";
 }
 
-.icon-development:before {
+.icon-description:before {
 	content: "\E007";
 }
 
-.icon-dribbble:before {
+.icon-development:before {
 	content: "\E008";
 }
 
-.icon-github-icon:before {
+.icon-dribbble:before {
 	content: "\E009";
 }
 
-.icon-hire:before {
+.icon-github-icon:before {
 	content: "\E00A";
 }
 
-.icon-home:before {
+.icon-hire:before {
 	content: "\E00B";
 }
 
-.icon-html-5:before {
+.icon-home:before {
 	content: "\E00C";
 }
 
-.icon-instgram:before {
+.icon-html-5:before {
 	content: "\E00D";
 }
 
-.icon-linkedin:before {
+.icon-instgram:before {
 	content: "\E00E";
 }
 
-.icon-logo:before {
+.icon-linkedin:before {
 	content: "\E00F";
 }
 
-.icon-menu-bars:before {
+.icon-logo:before {
 	content: "\E010";
 }
 
-.icon-service:before {
+.icon-menu-bars:before {
 	content: "\E011";
 }
 
-.icon-service_1:before {
+.icon-service:before {
 	content: "\E012";
 }
 
-.icon-technology:before {
+.icon-service_1:before {
 	content: "\E013";
 }
 
-.icon-ui-design:before {
+.icon-technology:before {
 	content: "\E014";
 }
 
-.icon-user-interface:before {
+.icon-ui-design:before {
 	content: "\E015";
 }
 
-.icon-ux-design-flow:before {
+.icon-user-interface:before {
 	content: "\E016";
 }
 
-.icon-ux-design:before {
+.icon-ux-design-flow:before {
 	content: "\E017";
 }
 
-.icon-wordpress:before {
+.icon-ux-design:before {
 	content: "\E018";
 }
 
-.icon-work-icon:before {
+.icon-wordpress:before {
 	content: "\E019";
 }
 
-.icon-work:before {
+.icon-work-icon:before {
 	content: "\E01A";
+}
+
+.icon-work:before {
+	content: "\E01B";
 }

@@ -1,163 +1,179 @@
 header {
-  .top-nav-container {
-    @include make-container();
-  }
-  nav.top-nav {
-    @include make-row();
-    position: fixed;
-    width: 100%;
-    background: #2c2c2c;
-    min-height: 80px;
-    z-index: 100;
-    padding: 0.5rem;
-    @include mq-sm {
-      min-height: 40px;
-    }
-    .logo {
-      @include make-col-ready();
-      @include make-col(1);
-      margin-top: 0.3rem;
-      @include mq-sm {
-        margin-top: 0rem;
-      }
-      a {
-        i {
-          font-size: 2rem;
-        }
-      }
-    }
-    .navigation-icons {
-      @include make-col-ready();
-      @include make-col(11);
-      text-align: right;
-    }
-  }
+	.top-nav-container {
+		@include make-container();
+	}
+	nav.top-nav {
+		@include make-row();
+		position: fixed;
+		width: 100%;
+		background: #2c2c2c;
+		min-height: 80px;
+		z-index: 100;
+		padding: 0.5rem;
+		@include mq-sm {
+			min-height: 40px;
+		}
+		.logo {
+			@include make-col-ready();
+			@include make-col(1);
+			margin-top: 0.3rem;
+			@include mq-sm {
+				margin-top: 0rem;
+			}
+			a {
+				text-decoration: none;
+				i {
+					font-size: 2rem;
+					color: $brand-blue;
+					@include transition(0.2s all ease-in-out);
+					&:hover {
+						color: darken($brand-blue, 5%);
+					}
+				}
+			}
+		}
+		.navigation-icons {
+			@include make-col-ready();
+			@include make-col(11);
+			text-align: right;
+		}
+	}
 }
 
 .nav {
-  &.scrolled {
-    padding: 0.5rem 0;
-    min-height: 10px;
-    transition: 0.35s all ease-in-out;
+	&.scrolled {
+		padding: 0.5rem 0;
+		min-height: 10px;
+		transition: 0.35s all ease-in-out;
 
-    li {
-      padding: 0rem 0.5rem;
-      transition: 0.2s all ease-in-out;
-    }
+		li {
+			padding: 0rem 0.5rem;
+			transition: 0.2s all ease-in-out;
+		}
 
-    svg {
-      max-width: 17px;
-      transition: 0.2s all ease-in-out;
-      &.svg-icon-logo {
-        max-width: 13px;
-      }
-    }
-    span {
-      opacity: 0;
-      visibility: hidden;
-      transition: 0.2s all ease-in-out;
-    }
-  }
+		svg {
+			max-width: 17px;
+			transition: 0.2s all ease-in-out;
+			&.svg-icon-logo {
+				max-width: 13px;
+			}
+		}
+		span {
+			opacity: 0;
+			visibility: hidden;
+			transition: 0.2s all ease-in-out;
+		}
+	}
 }
 
 .navigation-icons {
-  margin-top: 0.35rem;
-  ul.nav-items {
-    list-style: none;
-    margin-bottom: 0;
+	margin-top: 0.35rem;
+	ul.nav-items {
+		list-style: none;
+		margin-bottom: 0;
 
-    li.nav-item {
-      display: inline-block;
-      padding: 0rem 2rem;
-      text-align: center;
+		li.nav-item {
+			display: inline-block;
+			padding: 0rem 2rem;
+			text-align: center;
 
-      @include mq-sm {
-        padding: 0rem 0.5rem;
-      }
+			@include mq-sm {
+				padding: 0rem 0.5rem;
+			}
 
-      &:hover {
-        & > a > i {
-          color: $brand-blue;
-          transition: all 0.1s ease-in-out;
-          cursor: pointer;
-        }
-        a > span {
-          color: $brand-blue;
-          cursor: pointer;
-        }
-      }
+			a {
+				color: $brand-dark-grey;
+				display: block;
+				text-decoration: none;
+				i {
+					height: 18px;
+					width: 21px;
+					display: inline-block;
+					vertical-align: middle;
+					@include mq-sm {
+						height: 20px;
+						width: 25px;
+					}
+				}
+				span {
+					color: $brand-dark-grey;
+					display: inline-block;
+					vertical-align: middle;
+					text-transform: uppercase;
+					letter-spacing: 0.1rem;
+					font-size: 0.6rem;
+					font-weight: 700;
+					margin-bottom: -0.45rem;
 
-      a {
-        color: $brand-dark-grey;
-        display: block;
-        text-decoration: none;
-        i {
-          height: 18px;
-          margin-bottom: -5px;
-          width: 21px;
+					&.active {
+						color: $brand-blue;
+					}
+				}
+			}
 
-          @include mq-sm {
-            height: 20px;
-            width: 25px;
-          }
-        }
-        span {
-          color: $brand-dark-grey;
-          text-transform: uppercase;
-          letter-spacing: 0.1rem;
-          font-size: 0.6rem;
-          font-weight: 700;
+			&:hover {
+				& > a > i {
+					color: $brand-blue;
+					transition: all 0.1s ease-in-out;
+					cursor: pointer;
+				}
+				a > span {
+					color: $brand-blue;
+					cursor: pointer;
+				}
+			}
 
-          &.active {
-            color: $brand-blue;
-          }
-        }
-      }
-    }
-  }
+			&.active {
+				a > i,
+				a > span {
+					color: $brand-blue;
+				}
+			}
+		}
+	}
 }
 
 .nav-icon {
-  fill: $brand-dark-grey;
-  transition: all 0.1s ease-in-out;
-  &:active {
-    fill: $brand-blue;
-  }
+	fill: $brand-dark-grey;
+	transition: all 0.1s ease-in-out;
+	&:active {
+		fill: $brand-blue;
+	}
 }
 
 .main-nav-icon.active {
-  svg {
-    .nav-icon {
-      fill: $brand-blue;
-    }
-  }
+	svg {
+		.nav-icon {
+			fill: $brand-blue;
+		}
+	}
 }
 
 .social-icon {
-  fill: $brand-grey;
-  &:hover {
-    fill: $brand-blue;
-    transition: all 0.1s ease-in-out;
-    cursor: pointer;
-  }
+	fill: $brand-grey;
+	&:hover {
+		fill: $brand-blue;
+		transition: all 0.1s ease-in-out;
+		cursor: pointer;
+	}
 }
 
 .social-media-icons {
-  margin-top: -4rem;
-  max-height: 22px;
-  ul {
-    list-style: none;
-    li {
-      display: inline-block;
-      padding: 0rem 0.5rem;
-    }
-  }
+	margin-top: -4rem;
+	max-height: 22px;
+	ul {
+		list-style: none;
+		li {
+			display: inline-block;
+			padding: 0rem 0.5rem;
+		}
+	}
 
-  svg {
-    &:hover > .social-icon {
-      fill: $brand-blue;
-      transition: all 0.1s ease-in-out;
-      cursor: pointer;
-    }
-  }
+	svg {
+		&:hover > .social-icon {
+			fill: $brand-blue;
+			transition: all 0.1s ease-in-out;
+			cursor: pointer;
+		}
+	}
 }

@@ -66,38 +66,33 @@ $goto = '';
             </div>
             <div class="navigation-icons">
                 <ul class="nav-items">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="main-nav-icon" href="<?php echo site_url(); ?>">
                             <i class="icon icon-home"></i>
-                            <br />
                             <span>Home</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="main-nav-icon" href="<?php echo site_url();?>/portfolio">
                             <i class="icon icon-work"></i>
-                            <br />
                             <span>Portfolio</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="main-nav-icon" href="<?php echo site_url();?>/about">
                             <i class="icon icon-about"></i>
-                            <br />
                             <span>About</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="main-nav-icon" href="<?php echo site_url();?>/blog">
                             <i class="icon icon-blog"></i>
-                            <br />
                             <span>Blog</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="main-nav-icon" href="<?php echo site_url();?>/contact">
                         <i class="icon icon-contact"></i>
-                        <br/>
                         <span>Contact</span>
                         </a>
                     </li>
@@ -112,17 +107,18 @@ $goto = '';
                 <h1>Garrett Sanderson</h1>
                 <h3>Web Developer &amp; Designer In Orange County, CA</h3>
                 <div class="divider"></div>
-                <h4></h4>
-                <nav class="central-display-nav">
+                <a href=""><button class="btn-main white outline">View Portfolio</button></a>
+                <a href=""><button class="btn-main white outline">My Thoughts</button></a>
+                <!-- <nav class="central-display-nav">
                     <ul>
                         <li class="active"><a href="/"> <i class="icon icon-home">Home</i></a></li>
-                        <li><a href="/projects"> <i class="icon icon-work">Projects</i></a></li>
+                        <li><a href="/projects"> <i class="icon icon-projects">Projects</i></a></li>
                         <li><a href="/services"> <i class="icon icon-services">Services</i></a></li>
                         <li><a href="/about"> <i class="icon icon-about">About</i></a></li>
                         <li><a href="/resume"> <i class="icon icon-resume">Resume</i></a></li>
                         <li><a href="/contact"> <i class="icon icon-contact">Contact</i></a></li>
                     </ul>
-                </nav>
+                </nav> -->
             </div>
             <div class="overlay"></div>
         </section>

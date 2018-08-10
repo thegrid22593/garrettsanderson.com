@@ -1,18 +1,36 @@
 button.btn-main {
-    background: transparent;
-    color: $brand-pink;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 0.5rem 1.5rem;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    margin-top: 1rem;
-    border: 3px solid $brand-pink;
-    cursor: pointer;
-    @include transition(0.2s all ease-in-out);
-    &:hover {
-        background: $brand-pink;
-        color: $brand-white;
-    }
+	background: transparent;
+	color: $brand-pink;
+	font-weight: 800;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 0.5rem 1.5rem;
+	border-radius: 5px;
+	font-size: 0.8rem;
+	margin-top: 1rem;
+	border: 3px solid $brand-pink;
+	cursor: pointer;
+	@include transition(0.2s all ease-in-out);
+	&:hover {
+		background: $brand-pink;
+		color: $brand-white;
+	}
+
+	&.pink.outline {
+		border: 3px solid $brand-pink;
+		color: $brand-pink;
+		&:hover {
+			background: $brand-pink;
+			color: $brand-white;
+		}
+	}
+
+	&.white.outline {
+		border: 3px solid $brand-white;
+		color: $brand-white;
+		&:hover {
+			background: $brand-white;
+			color: $brand-blue;
+		}
+	}
 }
