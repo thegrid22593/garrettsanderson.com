@@ -3,7 +3,7 @@
 $data = $_POST;
 
 $domain = ltrim(ltrim($_SERVER['HTTP_HOST'], 'www.'), 'dev.');
-$reply = "noreply@".$domain;
+$reply = "noreply@" . $domain;
 $website = $data['website'];
 $sendto = $data['recipient'];
 $fname = $data['firstName'];
@@ -15,5 +15,3 @@ $zip = $data['zip'];
 $email = $data['email'];
 $phone = $data['phone'];
 $comments = $data['comments'];
-
-';
