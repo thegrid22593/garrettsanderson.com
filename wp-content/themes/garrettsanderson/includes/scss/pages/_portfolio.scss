@@ -10,7 +10,6 @@
         background-size: cover !important;
         float: none;
         @include make-col(12);
-        height: 100vh;
         position: relative;
         z-index: 20;
         @include transition(1s all ease-in-out);

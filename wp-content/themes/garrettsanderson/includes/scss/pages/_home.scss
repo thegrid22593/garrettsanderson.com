@@ -1,6 +1,12 @@
 .skills-and-passions {
   background: $brand-blue;
-  padding: 5rem;
+  padding: 2rem;
+  @include mq-md {
+    padding: 3rem;
+  }
+  @include mq-lg {
+    padding: 5rem;
+  }
   .skills-and-passions-container {
     @include make-container();
     h2 {
@@ -12,9 +18,15 @@
       @include make-row();
       .skill {
         @include make-col-ready();
-        @include make-col(4);
+        @include make-col(12);
         text-align: center;
-        padding: 2rem;
+        @include mq-md {
+          @include make-col(6);
+        }
+        @include mq-lg {
+          padding: 2rem;
+          @include make-col(4);
+        }
         i {
           color: $brand-white;
           font-size: 2rem;

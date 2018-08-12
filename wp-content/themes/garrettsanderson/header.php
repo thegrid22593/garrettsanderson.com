@@ -6,9 +6,9 @@ global $scriptsHeader;
 
 // Scroll to ID on a page
 if (isset($_GET["goto"])) {
-$goto = $_GET["goto"];
+    $goto = $_GET["goto"];
 } else {
-$goto = '';
+    $goto = '';
 }
 
 ?>
@@ -19,15 +19,15 @@ $goto = '';
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#bbbbbb"/>
-<title><?php the_title(); ?></title>
+<title><?php the_title();?></title>
 
 <!-- INCLUDE THE HEADER -->
-<?php wp_head(); ?>
+<?php wp_head();?>
 
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link rel="shortcut icon" href="<?php echo the_field('favicon','option'); ?>"/>
-<link rel="apple-touch-icon" href="<?php echo the_field('favicon','option'); ?>">
+<link rel="pingback" href="<?php bloginfo('pingback_url');?>">
+<link rel="shortcut icon" href="<?php echo the_field('favicon', 'option'); ?>"/>
+<link rel="apple-touch-icon" href="<?php echo the_field('favicon', 'option'); ?>">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:400,500,700" rel="stylesheet">
 
 <!-- ANALYTICS -->
@@ -37,22 +37,22 @@ $goto = '';
  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
- ga('create', '<?php echo the_field('google_analytics','option'); ?>', 'auto');
+ ga('create', '<?php echo the_field('google_analytics', 'option'); ?>', 'auto');
  ga('send', 'pageview');
  </script>
 
-<?php if($goto ) { ?>
+<?php if ($goto) {?>
   <script>
     $( document ).ready(function() {
     goToByScroll('<?php echo $goto; ?>');
     });
   </script>
-<?php } ?>
+<?php }?>
 
 
 </head>
 
-<body id="top" class="preload <?php if(is_single() || is_archive()) { echo 'news'; } else { the_slug(); } ?>">
+<body id="top" class="preload <?php if (is_single() || is_archive()) {echo 'news';} else {the_slug();}?>">
 
 <a id="uplink" class="twhite pad1 scrollto" href="#top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 
@@ -60,7 +60,7 @@ $goto = '';
     <section class="top-nav-container">
         <nav class="top-nav">
             <div class="logo">
-                <a class="main-logo" href="<?php echo site_url();?>">
+                <a class="main-logo" href="<?php echo site_url(); ?>">
                     <i class="icon icon-logo"></i>
                 </a>
             </div>
@@ -73,25 +73,25 @@ $goto = '';
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="main-nav-icon" href="<?php echo site_url();?>/portfolio">
+                        <a class="main-nav-icon" href="<?php echo site_url(); ?>/portfolio">
                             <i class="icon icon-work"></i>
                             <span>Portfolio</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="main-nav-icon" href="<?php echo site_url();?>/about">
+                        <a class="main-nav-icon" href="<?php echo site_url(); ?>/about">
                             <i class="icon icon-about"></i>
                             <span>About</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="main-nav-icon" href="<?php echo site_url();?>/blog">
+                        <a class="main-nav-icon" href="<?php echo site_url(); ?>/blog">
                             <i class="icon icon-blog"></i>
                             <span>Blog</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="main-nav-icon" href="<?php echo site_url();?>/contact">
+                        <a class="main-nav-icon" href="<?php echo site_url(); ?>/contact">
                         <i class="icon icon-contact"></i>
                         <span>Contact</span>
                         </a>
@@ -100,15 +100,15 @@ $goto = '';
             </div>
         </nav>
     </section>
-    
-    <?php if(is_front_page()): ?>
+
+    <?php if (is_front_page()): ?>
         <section class="central-display">
             <div class="headlines">
                 <h1>Garrett Sanderson</h1>
                 <h3>Web Developer &amp; Designer In Orange County, CA</h3>
                 <div class="divider"></div>
-                <a href=""><button class="btn-main white outline"><i class="icon icon-work"></i>View Portfolio</button></a>
-                <a href=""><button class="btn-main white outline">My Thoughts</button></a>
+                <a href="<?php site_url();?>/portfolio"><button class="btn-main white outline"><i class="icon icon-work"></i>View Portfolio</button></a>
+                <a href="<?php site_url();?>/blog"><button class="btn-main white outline">My Thoughts</button></a>
                 <!-- <nav class="central-display-nav">
                     <ul>
                         <li class="active"><a href="/"> <i class="icon icon-home">Home</i></a></li>
@@ -122,5 +122,5 @@ $goto = '';
             </div>
             <div class="overlay"></div>
         </section>
-    <?php endif; ?>
+    <?php endif;?>
 </header>
