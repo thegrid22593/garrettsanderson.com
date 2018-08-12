@@ -4,7 +4,7 @@
  * @package garrettsanderson
  */
 
-get_header(); ?>
+get_header();?>
 
 <section class="skills-and-passions">
     <div class="skills-and-passions-container">
@@ -33,21 +33,21 @@ get_header(); ?>
             </div>
             <div class="skill">
                 <div class="skill-content">
-                    <i class="icon icon-ux-design-flow"></i>
+                    <i class="icon icon-analytics"></i>
                     <h3>Data & Analytics</h3>
                     <p>Sites not only need to be userfriendly and beautiful but also convert! A great looking website does nothing if it doesn't bring home the bacon at the end of the day.</p>
                 </div>
             </div>
             <div class="skill">
                 <div class="skill-content">
-                    <i class="icon icon-ux-design-flow"></i>
+                    <i class="icon icon-seo"></i>
                     <h3>SEO & Search Ranking</h3>
                     <p>Websites need to be idexible and searchable, period. Without an SEO strategy and plan in place, good luck getting traffic to your site.</p>
                 </div>
             </div>
             <div class="skill">
                 <div class="skill-content">
-                    <i class="icon icon-development"></i>
+                    <i class="icon icon-talk-web"></i>
                     <h3>Talking About The Web</h3>
                     <p>I absolutely love everything about the web and its capabilities. With that, I like to keep all my findings and nuggets on my blog.</p>
                 </div>
@@ -65,4 +65,4 @@ get_header(); ?>
     </div>
 </section> -->
 
-<?php get_footer(); ?>
+<?php get_footer();?>

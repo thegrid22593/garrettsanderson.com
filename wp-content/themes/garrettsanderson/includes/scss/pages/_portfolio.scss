@@ -13,8 +13,12 @@
         position: relative;
         z-index: 20;
         @include transition(1s all ease-in-out);
-        @include mq-lg {
+        @include mq-md {
           float: left;
+          height: 300px;
+          @include make-col(6);
+        }
+        @include mq-lg {
           width: 50%;
           height: 50vh;
           @include make-col(6);

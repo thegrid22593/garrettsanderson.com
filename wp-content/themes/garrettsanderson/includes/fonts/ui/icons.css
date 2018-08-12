@@ -25,106 +25,126 @@
 	content: "\E001";
 }
 
-.icon-arrow-left:before {
+.icon-analytics:before {
 	content: "\E002";
 }
 
-.icon-arrow-right:before {
+.icon-arrow-left:before {
 	content: "\E003";
 }
 
-.icon-blog:before {
+.icon-arrow-right:before {
 	content: "\E004";
 }
 
-.icon-contact:before {
+.icon-blog:before {
 	content: "\E005";
 }
 
-.icon-css-3:before {
+.icon-close:before {
 	content: "\E006";
 }
 
-.icon-description:before {
+.icon-contact:before {
 	content: "\E007";
 }
 
-.icon-development:before {
+.icon-css-3:before {
 	content: "\E008";
 }
 
-.icon-dribbble:before {
+.icon-description:before {
 	content: "\E009";
 }
 
-.icon-github-icon:before {
+.icon-development:before {
 	content: "\E00A";
 }
 
-.icon-hire:before {
+.icon-dribbble:before {
 	content: "\E00B";
 }
 
-.icon-home:before {
+.icon-github-icon:before {
 	content: "\E00C";
 }
 
-.icon-html-5:before {
+.icon-hire:before {
 	content: "\E00D";
 }
 
-.icon-instgram:before {
+.icon-home:before {
 	content: "\E00E";
 }
 
-.icon-linkedin:before {
+.icon-html-5:before {
 	content: "\E00F";
 }
 
-.icon-logo:before {
+.icon-instgram:before {
 	content: "\E010";
 }
 
-.icon-menu-bars:before {
+.icon-linkedin:before {
 	content: "\E011";
 }
 
-.icon-service:before {
+.icon-logo:before {
 	content: "\E012";
 }
 
-.icon-service_1:before {
+.icon-menu-bars:before {
 	content: "\E013";
 }
 
-.icon-technology:before {
+.icon-nav-menu-bars:before {
 	content: "\E014";
 }
 
-.icon-ui-design:before {
+.icon-seo:before {
 	content: "\E015";
 }
 
-.icon-user-interface:before {
+.icon-service:before {
 	content: "\E016";
 }
 
-.icon-ux-design-flow:before {
+.icon-service_1:before {
 	content: "\E017";
 }
 
-.icon-ux-design:before {
+.icon-talk-web:before {
 	content: "\E018";
 }
 
-.icon-wordpress:before {
+.icon-technology:before {
 	content: "\E019";
 }
 
-.icon-work-icon:before {
+.icon-ui-design:before {
 	content: "\E01A";
 }
 
-.icon-work:before {
+.icon-user-interface:before {
 	content: "\E01B";
+}
+
+.icon-ux-design-flow:before {
+	content: "\E01C";
+}
+
+.icon-ux-design:before {
+	content: "\E01D";
+}
+
+.icon-wordpress:before {
+	content: "\E01E";
+}
+
+.icon-work-icon:before {
+	content: "\E01F";
+}
+
+.icon-work:before {
+	content: "\E020";
 }

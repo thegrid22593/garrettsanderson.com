@@ -11,11 +11,17 @@ button {
 
 .intro {
   @include make-col-ready();
-  @include make-col(7);
   padding-top: 6rem;
   padding-bottom: 3rem;
   text-align: center;
   margin: 0 auto;
+  @include make-col(11);
+  @include mq-md {
+    @include make-col(10);
+  }
+  @include mq-lg {
+    @include make-col(7);
+  }
   h1 {
     color: $brand-black;
     padding: 2rem 0;

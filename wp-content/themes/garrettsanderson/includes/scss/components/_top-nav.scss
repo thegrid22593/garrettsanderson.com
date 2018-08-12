@@ -7,35 +7,39 @@ header {
 		position: fixed;
 		width: 100%;
 		background: #2c2c2c;
-		min-height: 80px;
 		z-index: 100;
 		padding: 0.5rem;
-		@include mq-sm {
-			min-height: 40px;
+		min-height: 40px;
+		@include mq-lg {
+			min-height: 80px;
 		}
 		.logo {
 			@include make-col-ready();
-			@include make-col(1);
-			margin-top: 0.3rem;
-			@include mq-sm {
-				margin-top: 0rem;
+			@include make-col(6);
+			@include mq-lg {
+				margin-top: 0.3rem;
+				@include make-col(1);
 			}
-			a {
-				text-decoration: none;
-				i {
-					font-size: 2rem;
-					color: $brand-blue;
-					@include transition(0.2s all ease-in-out);
-					&:hover {
-						color: darken($brand-blue, 5%);
-					}
+		}
+		a {
+			text-decoration: none;
+			i {
+				font-size: 2rem;
+				color: $brand-blue;
+				@include transition(0.2s all ease-in-out);
+				&:hover {
+					color: darken($brand-blue, 5%);
 				}
 			}
 		}
-		.navigation-icons {
-			@include make-col-ready();
-			@include make-col(11);
-			text-align: right;
+	}
+	.navigation-icons {
+		@include make-col-ready();
+		@include make-col(11);
+		text-align: right;
+		display: none;
+		@include mq-lg {
+			display: block;
 		}
 	}
 }
@@ -45,12 +49,10 @@ header {
 		padding: 0.5rem 0;
 		min-height: 10px;
 		transition: 0.35s all ease-in-out;
-
 		li {
 			padding: 0rem 0.5rem;
 			transition: 0.2s all ease-in-out;
 		}
-
 		svg {
 			max-width: 17px;
 			transition: 0.2s all ease-in-out;
@@ -71,16 +73,13 @@ header {
 	ul.nav-items {
 		list-style: none;
 		margin-bottom: 0;
-
 		li.nav-item {
 			display: inline-block;
 			padding: 0rem 2rem;
 			text-align: center;
-
 			@include mq-sm {
 				padding: 0rem 0.5rem;
 			}
-
 			a {
 				color: $brand-dark-grey;
 				display: block;
@@ -104,28 +103,25 @@ header {
 					font-size: 0.6rem;
 					font-weight: 700;
 					margin-bottom: -0.45rem;
-
 					&.active {
 						color: $brand-blue;
 					}
 				}
 			}
-
 			&:hover {
-				& > a > i {
+				&>a>i {
 					color: $brand-blue;
 					transition: all 0.1s ease-in-out;
 					cursor: pointer;
 				}
-				a > span {
+				a>span {
 					color: $brand-blue;
 					cursor: pointer;
 				}
 			}
-
 			&.active {
-				a > i,
-				a > span {
+				a>i,
+				a>span {
 					color: $brand-blue;
 				}
 			}
@@ -168,12 +164,71 @@ header {
 			padding: 0rem 0.5rem;
 		}
 	}
-
 	svg {
-		&:hover > .social-icon {
+		&:hover>.social-icon {
 			fill: $brand-blue;
 			transition: all 0.1s ease-in-out;
 			cursor: pointer;
+		}
+	}
+}
+
+.mobile-nav-toggle {
+	@include make-col-ready();
+	@include make-col(6);
+	text-align: right;
+	margin-top: 0.35rem;
+	i {
+		color: $brand-dark-grey;
+		font-size: 1.5rem;
+	}
+}
+
+.mobile-nav {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: $brand-blue;
+	z-index: 500;
+	opacity: 0;
+	z-index: -1;
+	right: -100%;
+	@include transition(0.2s all ease-in-out);
+	@include mq-lg {
+		display: none;
+	}
+	&.active {
+		opacity: 1;
+		z-index: 500;
+		right: 0;
+	}
+	.mobile-nav-container {
+		padding: 2rem;
+		position: relative;
+		.navigation {
+			ul {
+				list-style: none;
+				li {
+					padding: 1rem 0;
+					a {
+						text-transform: uppercase;
+						letter-spacing: 3px;
+						color: $brand-white;
+						font-weight: 500;
+						i {
+							color: $brand-white;
+						}
+					}
+				}
+			}
+		}
+		.close-mobile-nav {
+			top: 2rem;
+			right: 2rem;
+			position: absolute;
+			i {
+				color: $brand-white;
+			}
 		}
 	}
 }
